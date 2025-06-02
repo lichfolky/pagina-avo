@@ -1,7 +1,40 @@
-*{
+* {
   margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: system-ui, sans-serif;
+html {
+  /* lch(6% 11 290); */
+  /* lch(70% 70 75) */
+  --background-color: rgb(238, 234, 234);
+  --text-color: lch(6% 11 285);
+  ;
+  font-size: 120%;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.5;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.wrapper {
+  padding: 0.5lh 1lh;
+  margin: 0 auto;
+  max-width: 900px;
+  min-height: 100vh;
+  border-radius: 4px;
+}
+
+h1 {
+  font-weight: 800;
+  font-style: normal;
+}
+
+blockquote {
+  padding: 0.5lh 1lh;
 }
